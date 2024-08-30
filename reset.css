@@ -1,0 +1,102 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    margin: 0;
+}
+
+body {
+    font-family: "Montserrat", sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+h1,
+h2{
+    font-family: "TLP", sans-serif;
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-size: 36px;
+    line-height: 40px;
+}
+
+h2 {
+    font-size: 26px;
+    line-height: 40px;
+}
+
+h3 {
+    font-size: 24px;
+    line-height: 40px;
+}
+
+h4 {
+    font-size: 18px;
+    line-height: 20px;
+}
+
+h5 {
+    font-size: 14px;
+    line-height: 20px;
+}
+
+h6 {
+    font-size: 12px;
+    line-height: 20px;
+}
+
+p {
+    font-size: 16px;
+    line-height: 1.8;
+    margin-block: 10px;
+}
+
+ul {
+    margin-top: 0;
+}
+
+a {
+    color: currentColor;
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+svg{
+    transition: all .3s ease-in-out;
+}
+button, input, textarea{
+    appearance: none;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    font-family: inherit;
+}
+@media (max-width:768px) {
+    h1 {
+        font-size: 18px;
+        line-height: 1.5;
+    }
+    
+    h2 {
+        font-size: 16px;
+        line-height: 1.5;
+    }
+    
+    h3 {
+        font-size: 14px;
+        line-height: 1.5;
+    }
+    body, p, li{
+        font-size:14px;
+    }
+}
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+  }

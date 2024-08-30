@@ -1,0 +1,92 @@
+footer{
+    background-color: #121212;
+    color: white;
+}
+.footer-copyright{
+    color: #969696;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    max-width: calc(100% - 300px);
+    margin: auto;
+    padding-block: 24px;
+    align-items: center;
+}
+.footer-copyright, .footer-copyright p{
+    font-size: 14px;
+}
+.footer-copyright .footer-menu{
+    justify-self: end;
+}
+.footer-copyright .footer-menu ul{
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+.footer-content-container{
+    max-width: calc(100% - 300px);
+    margin: auto;
+    padding-block: 40px;
+    border-bottom: 2px solid #96969680;
+}
+.footer-content-container>h3{
+    margin-bottom: 12px;
+    line-height: 1.5;
+}
+.footer-links-grid{
+    list-style: none;
+    padding: 0;
+    color: #969696;
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+.footer-content-container.company-info{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    align-items: center;
+    color: #969696;
+}
+.footer-content-container.company-info h3{
+    font-family: "TLP", sans-serif;
+    color: white;
+}
+.footer-content-container .company-contact{
+    display: flex;
+    gap: 12px;
+    flex-direction: column;
+}
+.footer-content-container .company-contact .icon-btn a{
+    display: flex;
+    gap: 12px;
+    align-items: center;
+}
+@media (max-width:1024px) {
+    .footer-content-container, .footer-copyright{
+        max-width: calc(100% - 40px);
+    }
+    .footer-copyright{
+        display: flex;
+        gap: 30px;
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+    .footer-copyright .footer-menu ul{
+        gap: 10px;
+        justify-content: center;
+    }
+    .footer-links-grid{
+        display: flex;
+        flex-direction: column;
+        max-height: 200px;
+        overflow-x: scroll;
+    }
+    .footer-content-container.company-info{
+        grid-template-columns: 1fr;
+        justify-items: start;
+        gap: 30px;
+    }
+}

@@ -1,0 +1,113 @@
+
+const mainNav = document.getElementById('mainNav');
+const clonedNav = mainNav.cloneNode(true);
+
+function toggleOffCanvas() {
+    const offCanvas = document.querySelector('.off-canvas');
+    const closeBtn = document.querySelector('.off-canvas .close-btn');
+
+    closeBtn.addEventListener('click', () => { offCanvas.style.right = '-100%'; });
+
+    if (!offCanvas.contains(clonedNav)) {
+        offCanvas.appendChild(clonedNav);
+    }
+
+    offCanvas.style.right = offCanvas.style.right === '0px' ? '-100%' : '0px';
+}
+
+document.addEventListener("DOMContentLoaded", function () {
+    var dropdowns = document.querySelectorAll('.filter-dropdown-button');
+
+    dropdowns.forEach(function (dropdown) {
+        var filterElement = dropdown.closest('.filter-dropdown-container');
+        var options = dropdown.querySelectorAll('.filter-dropdown-options li');
+        var selectElement = filterElement.querySelector('.dropdown-select-element');
+
+        dropdown.addEventListener('click', function (event) {
+            event.stopPropagation(); // Stop the click event from reaching the document
+
+            closeOpenDropdowns(); // Close any other open dropdowns
+
+            var dropdownOptions = dropdown.querySelector('.filter-dropdown-options');
+
+            if (window.innerWidth <= 1024) {
+                dropdownOptions.style.bottom = (dropdownOptions.style.bottom === "0px") ? "-100%" : "0";
+                setTimeout(() => {
+                    dropdownOptions.style.display = (dropdownOptions.style.display === "block") ? "none" : "block";
+                }, 300);
+            } else {
+                dropdownOptions.style.display = (dropdownOptions.style.display === "block") ? "none" : "block";
+                dropdownOptions.style.bottom = ""; // Reset bottom property
+            }
+
+            dropdown.classList.add('active'); // Add a class for visual feedback
+        });
+
+        options.forEach(function (option) {
+            option.addEventListener('click', function (event) {
+                event.stopPropagation(); // Stop the click event from reaching the document
+
+                selectElement.options[0].value = option.getAttribute("data-value");
+                selectElement.options[0].text = option.innerText;
+                dropdown.querySelector('span').innerText = option.innerText;
+
+                closeOpenDropdowns();
+            });
+
+            dropdown.querySelector('.filter-dropdown-options').style.display = "none";
+        });
+    });
+
+    function closeOpenDropdowns() {
+        dropdowns.forEach(function (dropdown) {
+            var dropdownOptions = dropdown.querySelector('.filter-dropdown-options');
+            dropdownOptions.style.display = "none";
+            dropdownOptions.style.bottom = ""; // Reset bottom property
+            dropdown.classList.remove('active'); // Remove the active class
+        });
+    }
+
+    document.addEventListener('click', function () {
+        closeOpenDropdowns();
+    });
+
+    document.addEventListener('keydown', function (event) {
+        if (event.key === "Escape") {
+            closeOpenDropdowns();
+        }
+    });
+});
+
+
+const showAllButton = document.getElementById('toggleCategoryList');
+const listItems = document.querySelectorAll('.category-grid li');
+
+// Initially, hide all list items except the first five
+for (let i = 5; i < listItems.length; i++) {
+    listItems[i].classList.add('hidden');
+}
+
+// Check if there are less than or equal to 5 list items
+if (listItems.length <= 5) {
+    showAllButton.style.display = 'none'; // Hide the show all button
+}
+
+showAllButton.addEventListener('click', function() {
+    const isShowingAll = showAllButton.getAttribute('data-show-all') === 'true';
+
+    if (isShowingAll) {
+        // If currently showing all items, hide all but the first five
+        for (let i = 5; i < listItems.length; i++) {
+            listItems[i].classList.add('hidden');
+        }
+        showAllButton.textContent = 'Show All';
+        showAllButton.setAttribute('data-show-all', 'false');
+    } else {
+        // If not currently showing all items, show all
+        listItems.forEach(item => {
+            item.classList.remove('hidden');
+        });
+        showAllButton.textContent = 'Show Less';
+        showAllButton.setAttribute('data-show-all', 'true');
+    }
+});

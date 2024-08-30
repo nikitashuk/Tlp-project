@@ -1,0 +1,2932 @@
+<!DOCTYPE html>
+<!-- saved from url=(0056)https://tlp-webdesign.netlify.app/property-listing-page/ -->
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TopLuxuryProperty – Listing Page</title>
+    <link
+      rel="stylesheet"
+      href="./TopLuxuryProperty – Listing Page_files/fonts.css"
+    />
+    <link
+      rel="stylesheet"
+      href="./TopLuxuryProperty – Listing Page_files/reset.css"
+    />
+    <link
+      rel="stylesheet"
+      href="./TopLuxuryProperty – Listing Page_files/header.css"
+    />
+    <link
+      rel="stylesheet"
+      href="./TopLuxuryProperty – Listing Page_files/body.css"
+    />
+    <link
+      rel="stylesheet"
+      href="./TopLuxuryProperty – Listing Page_files/footer.css"
+    />
+  </head>
+
+  <body>
+    <header>
+      <div class="off-canvas">
+        <span class="close-btn">×</span>
+      </div>
+      <div class="header-container">
+        <h1 class="logo">
+          <a href="https://tlp-webdesign.netlify.app/homepage/"
+            ><img
+              src="./TopLuxuryProperty – Listing Page_files/topluxuryproperty-logo-black-small.webp"
+              alt="TopLuxuryProperty Logo"
+          /></a>
+        </h1>
+        <nav>
+          <svg
+            class="mobile-ham"
+            onclick="toggleOffCanvas()"
+            width="24px"
+            height="24px"
+            viewBox="0 0 20 20"
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M19 4a1 1 0 01-1 1H2a1 1 0 010-2h16a1 1 0 011 1zm0 6a1 1 0 01-1 1H2a1 1 0 110-2h16a1 1 0 011 1zm-1 7a1 1 0 100-2H2a1 1 0 100 2h16z"
+            ></path>
+          </svg>
+          <ul id="mainNav">
+            <li class="sub-menu-container">
+              <a
+                href="https://tlp-webdesign.netlify.app/property-listing-page/#"
+                >Buy</a
+              >
+            </li>
+
+            <li class="sub-menu-container">
+              <a
+                href="https://tlp-webdesign.netlify.app/property-listing-page/#"
+                >Rent</a
+              >
+            </li>
+
+            <li class="sub-menu-container">
+              <a
+                href="https://tlp-webdesign.netlify.app/property-listing-page/#"
+                >New projects
+              </a>
+            </li>
+
+            <li class="sub-menu-container">
+              <a
+                href="https://tlp-webdesign.netlify.app/property-listing-page/#properties"
+                >Explore</a
+              >
+              <ul class="sub-menu">
+                <li>
+                  <a href="https://tlp-webdesign.netlify.app/about-us/"></a>
+                </li>
+                <li>
+                  <a href="https://tlp-webdesign.netlify.app/company-profile/"
+                    >Our Story</a
+                  >
+                </li>
+                <li>
+                  <a href="https://tlp-webdesign.netlify.app/team/">Our Team</a>
+                </li>
+                <li>
+                  <a
+                    href="https://tlp-webdesign.netlify.app/investment-opportunities/"
+                    >Investments</a
+                  >
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <section id="header-filters" class="top-filters">
+        <div class="header-search-input">
+          <form
+            action="https://tlp-webdesign.netlify.app/property-listing-page/"
+            method="get"
+          >
+            <svg
+              width="17"
+              height="16"
+              viewBox="0 0 17 16"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M15.1663 14.6673L13.833 13.334M8.16634 14.0007C8.99805 14.0007 9.82161 13.8368 10.59 13.5186C11.3584 13.2003 12.0566 12.7338 12.6447 12.1457C13.2328 11.5576 13.6993 10.8594 14.0176 10.091C14.3359 9.32258 14.4997 8.49902 14.4997 7.66732C14.4997 6.83561 14.3359 6.01205 14.0176 5.24366C13.6993 4.47526 13.2328 3.77708 12.6447 3.18897C12.0566 2.60087 11.3584 2.13436 10.59 1.81608C9.82161 1.4978 8.99805 1.33398 8.16634 1.33398C6.48664 1.33398 4.87573 2.00124 3.688 3.18897C2.50027 4.3767 1.83301 5.98761 1.83301 7.66732C1.83301 9.34702 2.50027 10.9579 3.688 12.1457C4.87573 13.3334 6.48664 14.0007 8.16634 14.0007Z"
+                stroke="#121212"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              ></path>
+            </svg>
+            <input type="text" placeholder="Search for Properties..." />
+          </form>
+        </div>
+        <div class="header-filters-container">
+          <div class="header-filters">
+            <form>
+              <select class="filter-dropdown-container">
+                <option value="1">Property type</option>
+                <option value="2">Apartment</option>
+                <option value="3">Penthouse</option>
+                <option value="4">Townhouse</option>
+
+                <option value="5">Duplex</option>
+                <option value="6">Villa</option>
+              </select>
+            </form>
+
+            <form>
+              <select class="filter-dropdown-container">
+                <option value="1">Beds</option>
+                <option value="2">1</option>
+                <option value="3">2</option>
+                <option value="4">3</option>
+
+                <option value="5">4</option>
+                <option value="6">5</option>
+              </select>
+            </form>
+
+            <!-- <form>
+                        <div class="custom-dropdown filter-dropdown-container">
+                            <button type="button" class="dropdown-button" onclick="toggleDropdown()">Price</button>
+                            <div class="dropdown-content" id="dropdownContent">
+                                <div class="submenu price-submenu">
+                                    <div class="submenu-item" onclick="showRandomValues('min')">Min Price</div>
+                                    <div class="submenu-item" onclick="showRandomValues('max')">Max Price</div>
+                                </div>
+                                <div class="random-values" id="randomValues"></div>
+                            </div>
+                        </div>
+                    </form> -->
+
+            <form>
+              <div class="filter-dropdown-container">
+                <select id="priceDropdown" onchange="showMinMaxMenu()">
+                  <option value="" disabled selected>Select Price</option>
+                  <option value="price">Price</option>
+                </select>
+
+                <select
+                  id="minMaxDropdown"
+                  style="display: none"
+                  onchange="showValues()"
+                >
+                  <option value="" disabled selected>
+                    Select Min-Max Values
+                  </option>
+                  <option value="100-500">100 - 500</option>
+                  <option value="200-400">200 - 400</option>
+                  <option value="300-600">300 - 600</option>
+                  <option value="400-800">400 - 800</option>
+                  <option value="500-1100">500 - 1100</option>
+                </select>
+
+                <div id="valueList" style="display: none">
+                  <!-- This will display the selected range -->
+                </div>
+              </div>
+            </form>
+            <form>
+              <select class="filter-dropdown-container">
+                <option value="1">Project Status</option>
+                <option value="2">Upcoming</option>
+                <option value="3">Under construction</option>
+                <option value="4">completed</option>
+              </select>
+            </form>
+
+            <button class="find-btn" type="submit">Find</button>
+          </div>
+        </div>
+      </section>
+      <section id="page-title" class="entry-title section-container">
+        <div class="title">
+          <p class="breadcrumbs">
+            <span class="item"
+              ><a href="https://tlp-webdesign.netlify.app/homepage/"
+                >Home</a
+              ></span
+            >
+            /
+            <span class="item"
+              ><a
+                href="https://tlp-webdesign.netlify.app/property-listing-page/"
+                >UAE</a
+              ></span
+            >
+            /
+            <span class="item"
+              ><a
+                href="https://tlp-webdesign.netlify.app/property-listing-page/"
+                >Dubai</a
+              ></span
+            >
+            /
+            <span class="item"
+              ><a
+                href="https://tlp-webdesign.netlify.app/property-listing-page/"
+                >Palm Jumairah</a
+              ></span
+            >
+          </p>
+          <h1>Properties for Sale in Palm Jumairah</h1>
+
+          <p class="meta-1">1,430 projects</p>
+        </div>
+        <div class="sort-filter">
+          <div class="filter-dropdown-container" id="dropdown">
+            <select
+              class="dropdown-select-element"
+              style="display: none"
+              name="sort"
+              id="sort-select"
+            >
+              <option value="" selected=""></option>
+            </select>
+            <div class="filter-dropdown-button">
+              <span>Sort</span>
+              <svg
+                width="16"
+                height="16"
+                viewBox="0 0 16 16"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M13.2802 5.9668L8.93355 10.3135C8.42021 10.8268 7.58022 10.8268 7.06688 10.3135L2.72021 5.9668"
+                  stroke="#000"
+                  stroke-width="1.5"
+                  stroke-miterlimit="10"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                ></path>
+              </svg>
+              <ul class="filter-dropdown-options" style="display: none">
+                <li data-value="3">Latest</li>
+                <li data-value="2">Lowest Price</li>
+                <li data-value="1">Highest Price</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- -------- -->
+      <!-- <div class="slider-container">    
+    <div class="slider-wrapper">
+        <div class="slider" id="slider">
+            <div class="slide">Dubai (1160 Projects )</div>
+            <div class="slide">Abu Dhabi (124 Projects )</div>
+            <div class="slide">Sharjah ( 79 Projects ) </div>
+            <div class="slide">Ras AI Kahima ( 47 Projects ) </div>
+            <div class="slide">Ras AI Kahima ( 47 Projects ) </div>
+            <div class="slide">Ras AI Kahima ( 47 Projects ) </div>
+            <div class="slide">Ras AI Kahima ( 47 Projects ) </div>
+            <div class="slide">Ras AI Kahima ( 47 Projects ) </div>
+            <div class="slide">Ras AI Kahima ( 47 Projects ) </div>
+            <div class="slide">Ras AI Kahima ( 47 Projects ) </div>
+            <div class="slide">Ras AI Kahima ( 47 Projects ) </div>
+
+            <div class="slide">Ras AI Kahima ( 47 Projects ) </div>
+
+        </div>
+    </div>
+    <button class="arrow left-arrow" onclick="slideLeft()">&#9664;</button>
+
+    <button class="arrow right-arrow" onclick="slideRight()">&#9654;</button>
+</div> -->
+
+      <div class="slider-container">
+        <div class="slider-wrapper">
+          <div class="slider" id="slider">
+            <div class="slide">Dubai (1160 Projects )</div>
+            <div class="slide">Abu Dhabi (124 Projects )</div>
+            <div class="slide">Sharjah ( 79 Projects )</div>
+            <div class="slide">Ras AI Kahima ( 47 Projects )</div>
+            <div class="slide">Ras AI Kahima ( 47 Projects )</div>
+            <div class="slide">Ras AI Kahima ( 47 Projects )</div>
+            <div class="slide">Ras AI Kahima ( 47 Projects )</div>
+            <div class="slide">Ras AI Kahima ( 47 Projects )</div>
+            <div class="slide">Ras AI Kahima ( 47 Projecs )</div>
+            <div class="slide">Ras AI Kahima ( 47 Projects )</div>
+            <div class="slide">Ras AI Kahima ( 47 Projects )</div>
+
+            <div class="slide">Ras AI Kahima ( 47 Projects )</div>
+          </div>
+        </div>
+        <div class="navigation">
+          <button
+            data-testid="navigation-arrows-left-button"
+            onclick="slideLeft()"
+            type="button"
+            class="arrow left-arrow button-module_button__06uQ8 styles-module_navigation-arrows__arrow__U1bMA"
+            disabled=""
+            aria-label="Previous item"
+          >
+            <svg
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+              class=""
+            >
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M15.8536 4.64645C15.68 4.47288 15.4106 4.4536 15.2157 4.58859L15.1464 4.64645L8.14645 11.6464C7.97288 11.82 7.9536 12.0894 8.08859 12.2843L8.14645 12.3536L15.1464 19.3536C15.3417 19.5488 15.6583 19.5488 15.8536 19.3536C16.0271 19.18 16.0464 18.9106 15.9114 18.7157L15.8536 18.6464L9.20704 12L15.8536 5.35355C16.0271 5.17999 16.0464 4.91056 15.9114 4.71569L15.8536 4.64645Z"
+                fill="currentColor"
+              ></path>
+            </svg>
+            
+            </button
+          >
+   
+    
+          <button
+            data-testid="navigation-arrows-right-button"
+            onclick="slideRight()"
+            type="button"
+            class="arrow right-arrow button-module_button__06uQ8 styles-module_navigation-arrows__arrow__U1bMA"
+            disabled=""
+            aria-label="Next item"
+          >
+            <svg
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+              class=""
+            >
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M8.14645 4.64645C8.32001 4.47288 8.58944 4.4536 8.78431 4.58859L8.85355 4.64645L15.8536 11.6464C16.0271 11.82 16.0464 12.0894 15.9114 12.2843L15.8536 12.3536L8.85355 19.3536C8.65829 19.5488 8.34171 19.5488 8.14645 19.3536C7.97288 19.18 7.9536 18.9106 8.08859 18.7157L8.14645 18.6464L14.793 12L8.14645 5.35355C7.97288 5.17999 7.9536 4.91056 8.08859 4.71569L8.14645 4.64645Z"
+                fill="currentColor"
+              ></path>
+            </svg>
+          </button>
+        </div>
+  
+      </div>
+
+      <section class="category-grid-container section-container">
+        <ul class="category-grid">
+          <li>
+            <a href="https://tlp-webdesign.netlify.app/property-listing-page/#"
+              >Apartments</a
+            >
+            (1500)
+          </li>
+          <li>
+            <a href="https://tlp-webdesign.netlify.app/property-listing-page/#"
+              >Townhouses</a
+            >
+            (1345)
+          </li>
+          <li>
+            <a href="https://tlp-webdesign.netlify.app/property-listing-page/#"
+              >Villas</a
+            >
+            (1209)
+          </li>
+          <li>
+            <a href="https://tlp-webdesign.netlify.app/property-listing-page/#"
+              >Land</a
+            >
+            (1090)
+          </li>
+          <li>
+            <a href="https://tlp-webdesign.netlify.app/property-listing-page/#"
+              >Apartments</a
+            >
+            (1500)
+          </li>
+          <li class="hidden">
+            <a href="https://tlp-webdesign.netlify.app/property-listing-page/#"
+              >Townhouses</a
+            >
+            (1345)
+          </li>
+          <li class="hidden">
+            <a href="https://tlp-webdesign.netlify.app/property-listing-page/#"
+              >Villas</a
+            >
+            (1209)
+          </li>
+          <li class="hidden">
+            <a href="https://tlp-webdesign.netlify.app/property-listing-page/#"
+              >Land</a
+            >
+            (1090)
+          </li>
+          <li class="hidden">
+            <a href="https://tlp-webdesign.netlify.app/property-listing-page/#"
+              >Apartments</a
+            >
+            (1500)
+          </li>
+          <li class="hidden">
+            <a href="https://tlp-webdesign.netlify.app/property-listing-page/#"
+              >Townhouses</a
+            >
+            (1345)
+          </li>
+          <li class="hidden">
+            <a href="https://tlp-webdesign.netlify.app/property-listing-page/#"
+              >Villas</a
+            >
+            (1209)
+          </li>
+          <li class="hidden">
+            <a href="https://tlp-webdesign.netlify.app/property-listing-page/#"
+              >Land</a
+            >
+            (1090)
+          </li>
+          <li class="hidden">
+            <a href="https://tlp-webdesign.netlify.app/property-listing-page/#"
+              >Apartments</a
+            >
+            (1500)
+          </li>
+          <li class="hidden">
+            <a href="https://tlp-webdesign.netlify.app/property-listing-page/#"
+              >Townhouses</a
+            >
+            (1345)
+          </li>
+          <li class="hidden">
+            <a href="https://tlp-webdesign.netlify.app/property-listing-page/#"
+              >Villas</a
+            >
+            (1209)
+          </li>
+          <li class="hidden">
+            <a href="https://tlp-webdesign.netlify.app/property-listing-page/#"
+              >Land</a
+            >
+            (1090)
+          </li>
+        </ul>
+        <button id="toggleCategoryList" data-show-all="false">Show All</button>
+      </section>
+      <section id="listings" class="listing-container section-container">
+        <article class="listing-item">
+          <a href="https://tlp-webdesign.netlify.app/listing/"
+            ><img
+              loading="lazy"
+              width="480"
+              height="270"
+              src="./TopLuxuryProperty – Listing Page_files/saved_resource"
+              alt="Listing 1"
+          /></a>
+          <div class="listing-header">
+            <a href="https://tlp-webdesign.netlify.app/listing/">
+              <p class="price">AED 3,099,999</p>
+              <h3>EXCLUSIVE | Full Lake View | Type 4E | 2 Bed</h3>
+              <p class="location">at Springs 15, The Springs, Dubai</p>
+            </a>
+          </div>
+          <div class="listing-footer">
+            <div class="listing-info">
+              <svg
+                stroke="currentColor"
+                fill="none"
+                stroke-width="2"
+                viewBox="0 0 24 24"
+                aria-hidden="true"
+                height="1em"
+                width="1em"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"
+                ></path>
+              </svg>
+              Apartment
+            </div>
+            <div class="listing-info">
+              <svg
+                width="16"
+                height="16"
+                viewBox="0 0 16 16"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M1.83333 7.5H14.1667C14.5203 7.5 14.8594 7.64048 15.1095 7.89052C15.3595 8.14057 15.5 8.47971 15.5 8.83333V12H0.5V8.83333C0.5 8.47971 0.640476 8.14057 0.890524 7.89052C1.14057 7.64048 1.47971 7.5 1.83333 7.5V7.5Z"
+                  stroke="#3E4861"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                ></path>
+                <path
+                  d="M0.5 12V14"
+                  stroke="#3E4861"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                ></path>
+                <path
+                  d="M15.5 12V14"
+                  stroke="#3E4861"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                ></path>
+                <path
+                  d="M14 7.5V3C14 2.73478 13.8946 2.48043 13.7071 2.29289C13.5196 2.10536 13.2652 2 13 2H3C2.73478 2 2.48043 2.10536 2.29289 2.29289C2.10536 2.48043 2 2.73478 2 3V7.5"
+                  stroke="#3E4861"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                ></path>
+                <path
+                  d="M5.66667 5H10.3333C10.5101 5 10.6797 5.07024 10.8047 5.19526C10.9298 5.32029 11 5.48986 11 5.66667V7.5H5V5.66667C5 5.48986 5.07024 5.32029 5.19526 5.19526C5.32029 5.07024 5.48986 5 5.66667 5V5Z"
+                  stroke="#3E4861"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                ></path>
+              </svg>
+              2 Bed
+            </div>
+            <div class="listing-info">
+              <svg
+                width="16"
+                height="16"
+                viewBox="0 0 16 16"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M13.7073 0.5L15.3539 2.14667C15.4004 2.19304 15.4372 2.24812 15.4624 2.30875C15.4875 2.36938 15.5004 2.43437 15.5004 2.5C15.5004 2.56563 15.4875 2.63062 15.4624 2.69125C15.4372 2.75188 15.4004 2.80696 15.3539 2.85333L13.7073 4.5"
+                  stroke="#3E4861"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                ></path>
+                <path
+                  d="M2.5 15.5V3.5C2.5 3.23478 2.60536 2.98043 2.79289 2.79289C2.98043 2.60536 3.23478 2.5 3.5 2.5H15.5"
+                  stroke="#3E4861"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                ></path>
+                <path
+                  d="M4.5 13.7073L2.854 15.3533C2.80757 15.3997 2.75243 15.4366 2.69175 15.4617C2.63107 15.4869 2.56602 15.4998 2.50033 15.4998C2.43465 15.4998 2.3696 15.4869 2.30892 15.4617C2.24823 15.4366 2.1931 15.3997 2.14667 15.3533L0.5 13.7073"
+                  stroke="#3E4861"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                ></path>
+                <path
+                  d="M14.5 15.5C14.7652 15.5 15.0196 15.3946 15.2071 15.2071C15.3946 15.0196 15.5 14.7652 15.5 14.5"
+                  stroke="#3E4861"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                ></path>
+                <path
+                  d="M12.5 15.5H11.5"
+                  stroke="#3E4861"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                ></path>
+                <path
+                  d="M9.5 15.5H8.5"
+                  stroke="#3E4861"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                ></path>
+                <path
+                  d="M6.5 15.5H5.5"
+                  stroke="#3E4861"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                ></path>
+                <path
+                  d="M15.5 12.5V11.5"
+                  stroke="#3E4861"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                ></path>
+                <path
+                  d="M15.5 9.5V8.5"
+                  stroke="#3E4861"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                ></path>
+                <path
+                  d="M15.5 6.5V5.5"
+                  stroke="#3E4861"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                ></path>
+              </svg>
+              1,258 sq.ft
+            </div>
+          </div>
+        </article>
+        <article class="listing-item">
+          <a href="https://tlp-webdesign.netlify.app/listing/"
+            ><img
+              loading="lazy"
+              width="480"
+              height="270"
+              src="./TopLuxuryProperty – Listing Page_files/saved_resource(1)"
+              alt="Listing 1"
+          /></a>
+          <div class="listing-header">
+            <a href="https://tlp-webdesign.netlify.app/listing/">
+              <p class="price">AED 26,500,000</p>
+              <h3>Exclusive L2 Hattan | Lake &amp; Skyline View</h3>
+              <p class="location">at Meadows 7, Meadows.</p>
+            </a>
+          </div>
+          <div class="listing-footer">
+            <div class="listing-info">
+              <svg
+                stroke="currentColor"
+                fill="none"
+                stroke-width="2"
+                viewBox="0 0 24 24"
+                aria-hidden="true"
+                height="1em"
+                width="1em"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"
+                ></path>
+              </svg>
+              Apartment
+            </div>
+            <div class="listing-info">
+              <svg
+                width="16"
+                height="16"
+                viewBox="0 0 16 16"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M1.83333 7.5H14.1667C14.5203 7.5 14.8594 7.64048 15.1095 7.89052C15.3595 8.14057 15.5 8.47971 15.5 8.83333V12H0.5V8.83333C0.5 8.47971 0.640476 8.14057 0.890524 7.89052C1.14057 7.64048 1.47971 7.5 1.83333 7.5V7.5Z"
+                  stroke="#3E4861"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                ></path>
+                <path
+                  d="M0.5 12V14"
+                  stroke="#3E4861"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                ></path>
+                <path
+                  d="M15.5 12V14"
+                  stroke="#3E4861"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                ></path>
+                <path
+                  d="M14 7.5V3C14 2.73478 13.8946 2.48043 13.7071 2.29289C13.5196 2.10536 13.2652 2 13 2H3C2.73478 2 2.48043 2.10536 2.29289 2.29289C2.10536 2.48043 2 2.73478 2 3V7.5"
+                  stroke="#3E4861"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                ></path>
+                <path
+                  d="M5.66667 5H10.3333C10.5101 5 10.6797 5.07024 10.8047 5.19526C10.9298 5.32029 11 5.48986 11 5.66667V7.5H5V5.66667C5 5.48986 5.07024 5.32029 5.19526 5.19526C5.32029 5.07024 5.48986 5 5.66667 5V5Z"
+                  stroke="#3E4861"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                ></path>
+              </svg>
+              2 Bed
+            </div>
+            <div class="listing-info">
+              <svg
+                width="16"
+                height="16"
+                viewBox="0 0 16 16"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M13.7073 0.5L15.3539 2.14667C15.4004 2.19304 15.4372 2.24812 15.4624 2.30875C15.4875 2.36938 15.5004 2.43437 15.5004 2.5C15.5004 2.56563 15.4875 2.63062 15.4624 2.69125C15.4372 2.75188 15.4004 2.80696 15.3539 2.85333L13.7073 4.5"
+                  stroke="#3E4861"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                ></path>
+                <path
+                  d="M2.5 15.5V3.5C2.5 3.23478 2.60536 2.98043 2.79289 2.79289C2.98043 2.60536 3.23478 2.5 3.5 2.5H15.5"
+                  stroke="#3E4861"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                ></path>
+                <path
+                  d="M4.5 13.7073L2.854 15.3533C2.80757 15.3997 2.75243 15.4366 2.69175 15.4617C2.63107 15.4869 2.56602 15.4998 2.50033 15.4998C2.43465 15.4998 2.3696 15.4869 2.30892 15.4617C2.24823 15.4366 2.1931 15.3997 2.14667 15.3533L0.5 13.7073"
+                  stroke="#3E4861"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                ></path>
+                <path
+                  d="M14.5 15.5C14.7652 15.5 15.0196 15.3946 15.2071 15.2071C15.3946 15.0196 15.5 14.7652 15.5 14.5"
+                  stroke="#3E4861"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                ></path>
+                <path
+                  d="M12.5 15.5H11.5"
+                  stroke="#3E4861"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                ></path>
+                <path
+                  d="M9.5 15.5H8.5"
+                  stroke="#3E4861"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                ></path>
+                <path
+                  d="M6.5 15.5H5.5"
+                  stroke="#3E4861"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                ></path>
+                <path
+                  d="M15.5 12.5V11.5"
+                  stroke="#3E4861"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                ></path>
+                <path
+                  d="M15.5 9.5V8.5"
+                  stroke="#3E4861"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                ></path>
+                <path
+                  d="M15.5 6.5V5.5"
+                  stroke="#3E4861"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                ></path>
+              </svg>
+              1,258 sq.ft
+            </div>
+          </div>
+        </article>
+        <article class="listing-item">
+          <a href="https://tlp-webdesign.netlify.app/listing/"
+            ><img
+              loading="lazy"
+              width="480"
+              height="270"
+              src="./TopLuxuryProperty – Listing Page_files/saved_resource(2)"
+              alt="Listing 1"
+          /></a>
+          <div class="listing-header">
+            <a href="https://tlp-webdesign.netlify.app/listing/">
+              <p class="price">AED 14,000,000</p>
+              <h3>6 Bedroom | Custom Build | G Plus2 With Lift</h3>
+              <p class="location">at Legacy, Jumeirah Park, Dubai</p>
+            </a>
+          </div>
+          <div class="listing-footer">
+            <div class="listing-info">
+              <svg
+                stroke="currentColor"
+                fill="none"
+                stroke-width="2"
+                viewBox="0 0 24 24"
+                aria-hidden="true"
+                height="1em"
+                width="1em"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"
+                ></path>
+              </svg>
+              Apartment
+            </div>
+            <div class="listing-info">
+              <svg
+                width="16"
+                height="16"
+                viewBox="0 0 16 16"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M1.83333 7.5H14.1667C14.5203 7.5 14.8594 7.64048 15.1095 7.89052C15.3595 8.14057 15.5 8.47971 15.5 8.83333V12H0.5V8.83333C0.5 8.47971 0.640476 8.14057 0.890524 7.89052C1.14057 7.64048 1.47971 7.5 1.83333 7.5V7.5Z"
+                  stroke="#3E4861"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                ></path>
+                <path
+                  d="M0.5 12V14"
+                  stroke="#3E4861"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                ></path>
+                <path
+                  d="M15.5 12V14"
+                  stroke="#3E4861"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                ></path>
+                <path
+                  d="M14 7.5V3C14 2.73478 13.8946 2.48043 13.7071 2.29289C13.5196 2.10536 13.2652 2 13 2H3C2.73478 2 2.48043 2.10536 2.29289 2.29289C2.10536 2.48043 2 2.73478 2 3V7.5"
+                  stroke="#3E4861"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                ></path>
+                <path
+                  d="M5.66667 5H10.3333C10.5101 5 10.6797 5.07024 10.8047 5.19526C10.9298 5.32029 11 5.48986 11 5.66667V7.5H5V5.66667C5 5.48986 5.07024 5.32029 5.19526 5.19526C5.32029 5.07024 5.48986 5 5.66667 5V5Z"
+                  stroke="#3E4861"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                ></path>
+              </svg>
+              2 Bed
+            </div>
+            <div class="listing-info">
+              <svg
+                width="16"
+                height="16"
+                viewBox="0 0 16 16"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M13.7073 0.5L15.3539 2.14667C15.4004 2.19304 15.4372 2.24812 15.4624 2.30875C15.4875 2.36938 15.5004 2.43437 15.5004 2.5C15.5004 2.56563 15.4875 2.63062 15.4624 2.69125C15.4372 2.75188 15.4004 2.80696 15.3539 2.85333L13.7073 4.5"
+                  stroke="#3E4861"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                ></path>
+                <path
+                  d="M2.5 15.5V3.5C2.5 3.23478 2.60536 2.98043 2.79289 2.79289C2.98043 2.60536 3.23478 2.5 3.5 2.5H15.5"
+                  stroke="#3E4861"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                ></path>
+                <path
+                  d="M4.5 13.7073L2.854 15.3533C2.80757 15.3997 2.75243 15.4366 2.69175 15.4617C2.63107 15.4869 2.56602 15.4998 2.50033 15.4998C2.43465 15.4998 2.3696 15.4869 2.30892 15.4617C2.24823 15.4366 2.1931 15.3997 2.14667 15.3533L0.5 13.7073"
+                  stroke="#3E4861"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                ></path>
+                <path
+                  d="M14.5 15.5C14.7652 15.5 15.0196 15.3946 15.2071 15.2071C15.3946 15.0196 15.5 14.7652 15.5 14.5"
+                  stroke="#3E4861"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                ></path>
+                <path
+                  d="M12.5 15.5H11.5"
+                  stroke="#3E4861"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                ></path>
+                <path
+                  d="M9.5 15.5H8.5"
+                  stroke="#3E4861"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                ></path>
+                <path
+                  d="M6.5 15.5H5.5"
+                  stroke="#3E4861"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                ></path>
+                <path
+                  d="M15.5 12.5V11.5"
+                  stroke="#3E4861"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                ></path>
+                <path
+                  d="M15.5 9.5V8.5"
+                  stroke="#3E4861"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                ></path>
+                <path
+                  d="M15.5 6.5V5.5"
+                  stroke="#3E4861"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                ></path>
+              </svg>
+              1,258 sq.ft
+            </div>
+          </div>
+        </article>
+        <article class="listing-item">
+          <a href="https://tlp-webdesign.netlify.app/listing/"
+            ><img
+              loading="lazy"
+              width="480"
+              height="270"
+              src="./TopLuxuryProperty – Listing Page_files/saved_resource"
+              alt="Listing 1"
+          /></a>
+          <div class="listing-header">
+            <a href="https://tlp-webdesign.netlify.app/listing/">
+              <p class="price">AED 3,099,999</p>
+              <h3>EXCLUSIVE | Full Lake View | Type 4E | 2 Bed</h3>
+              <p class="location">at Springs 15, The Springs, Dubai</p>
+            </a>
+          </div>
+          <div class="listing-footer">
+            <div class="listing-info">
+              <svg
+                stroke="currentColor"
+                fill="none"
+                stroke-width="2"
+                viewBox="0 0 24 24"
+                aria-hidden="true"
+                height="1em"
+                width="1em"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"
+                ></path>
+              </svg>
+              Apartment
+            </div>
+            <div class="listing-info">
+              <svg
+                width="16"
+                height="16"
+                viewBox="0 0 16 16"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M1.83333 7.5H14.1667C14.5203 7.5 14.8594 7.64048 15.1095 7.89052C15.3595 8.14057 15.5 8.47971 15.5 8.83333V12H0.5V8.83333C0.5 8.47971 0.640476 8.14057 0.890524 7.89052C1.14057 7.64048 1.47971 7.5 1.83333 7.5V7.5Z"
+                  stroke="#3E4861"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                ></path>
+                <path
+                  d="M0.5 12V14"
+                  stroke="#3E4861"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                ></path>
+                <path
+                  d="M15.5 12V14"
+                  stroke="#3E4861"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                ></path>
+                <path
+                  d="M14 7.5V3C14 2.73478 13.8946 2.48043 13.7071 2.29289C13.5196 2.10536 13.2652 2 13 2H3C2.73478 2 2.48043 2.10536 2.29289 2.29289C2.10536 2.48043 2 2.73478 2 3V7.5"
+                  stroke="#3E4861"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                ></path>
+                <path
+                  d="M5.66667 5H10.3333C10.5101 5 10.6797 5.07024 10.8047 5.19526C10.9298 5.32029 11 5.48986 11 5.66667V7.5H5V5.66667C5 5.48986 5.07024 5.32029 5.19526 5.19526C5.32029 5.07024 5.48986 5 5.66667 5V5Z"
+                  stroke="#3E4861"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                ></path>
+              </svg>
+              2 Bed
+            </div>
+            <div class="listing-info">
+              <svg
+                width="16"
+                height="16"
+                viewBox="0 0 16 16"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M13.7073 0.5L15.3539 2.14667C15.4004 2.19304 15.4372 2.24812 15.4624 2.30875C15.4875 2.36938 15.5004 2.43437 15.5004 2.5C15.5004 2.56563 15.4875 2.63062 15.4624 2.69125C15.4372 2.75188 15.4004 2.80696 15.3539 2.85333L13.7073 4.5"
+                  stroke="#3E4861"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                ></path>
+                <path
+                  d="M2.5 15.5V3.5C2.5 3.23478 2.60536 2.98043 2.79289 2.79289C2.98043 2.60536 3.23478 2.5 3.5 2.5H15.5"
+                  stroke="#3E4861"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                ></path>
+                <path
+                  d="M4.5 13.7073L2.854 15.3533C2.80757 15.3997 2.75243 15.4366 2.69175 15.4617C2.63107 15.4869 2.56602 15.4998 2.50033 15.4998C2.43465 15.4998 2.3696 15.4869 2.30892 15.4617C2.24823 15.4366 2.1931 15.3997 2.14667 15.3533L0.5 13.7073"
+                  stroke="#3E4861"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                ></path>
+                <path
+                  d="M14.5 15.5C14.7652 15.5 15.0196 15.3946 15.2071 15.2071C15.3946 15.0196 15.5 14.7652 15.5 14.5"
+                  stroke="#3E4861"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                ></path>
+                <path
+                  d="M12.5 15.5H11.5"
+                  stroke="#3E4861"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                ></path>
+                <path
+                  d="M9.5 15.5H8.5"
+                  stroke="#3E4861"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                ></path>
+                <path
+                  d="M6.5 15.5H5.5"
+                  stroke="#3E4861"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                ></path>
+                <path
+                  d="M15.5 12.5V11.5"
+                  stroke="#3E4861"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                ></path>
+                <path
+                  d="M15.5 9.5V8.5"
+                  stroke="#3E4861"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                ></path>
+                <path
+                  d="M15.5 6.5V5.5"
+                  stroke="#3E4861"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                ></path>
+              </svg>
+              1,258 sq.ft
+            </div>
+          </div>
+        </article>
+        <article class="listing-item">
+          <a href="https://tlp-webdesign.netlify.app/listing/"
+            ><img
+              loading="lazy"
+              width="480"
+              height="270"
+              src="./TopLuxuryProperty – Listing Page_files/saved_resource(1)"
+              alt="Listing 1"
+          /></a>
+          <div class="listing-header">
+            <a href="https://tlp-webdesign.netlify.app/listing/">
+              <p class="price">AED 26,500,000</p>
+              <h3>Exclusive L2 Hattan | Lake &amp; Skyline View</h3>
+              <p class="location">at Meadows 7, Meadows.</p>
+            </a>
+          </div>
+          <div class="listing-footer">
+            <div class="listing-info">
+              <svg
+                stroke="currentColor"
+                fill="none"
+                stroke-width="2"
+                viewBox="0 0 24 24"
+                aria-hidden="true"
+                height="1em"
+                width="1em"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"
+                ></path>
+              </svg>
+              Apartment
+            </div>
+            <div class="listing-info">
+              <svg
+                width="16"
+                height="16"
+                viewBox="0 0 16 16"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M1.83333 7.5H14.1667C14.5203 7.5 14.8594 7.64048 15.1095 7.89052C15.3595 8.14057 15.5 8.47971 15.5 8.83333V12H0.5V8.83333C0.5 8.47971 0.640476 8.14057 0.890524 7.89052C1.14057 7.64048 1.47971 7.5 1.83333 7.5V7.5Z"
+                  stroke="#3E4861"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                ></path>
+                <path
+                  d="M0.5 12V14"
+                  stroke="#3E4861"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                ></path>
+                <path
+                  d="M15.5 12V14"
+                  stroke="#3E4861"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                ></path>
+                <path
+                  d="M14 7.5V3C14 2.73478 13.8946 2.48043 13.7071 2.29289C13.5196 2.10536 13.2652 2 13 2H3C2.73478 2 2.48043 2.10536 2.29289 2.29289C2.10536 2.48043 2 2.73478 2 3V7.5"
+                  stroke="#3E4861"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                ></path>
+                <path
+                  d="M5.66667 5H10.3333C10.5101 5 10.6797 5.07024 10.8047 5.19526C10.9298 5.32029 11 5.48986 11 5.66667V7.5H5V5.66667C5 5.48986 5.07024 5.32029 5.19526 5.19526C5.32029 5.07024 5.48986 5 5.66667 5V5Z"
+                  stroke="#3E4861"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                ></path>
+              </svg>
+              2 Bed
+            </div>
+            <div class="listing-info">
+              <svg
+                width="16"
+                height="16"
+                viewBox="0 0 16 16"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M13.7073 0.5L15.3539 2.14667C15.4004 2.19304 15.4372 2.24812 15.4624 2.30875C15.4875 2.36938 15.5004 2.43437 15.5004 2.5C15.5004 2.56563 15.4875 2.63062 15.4624 2.69125C15.4372 2.75188 15.4004 2.80696 15.3539 2.85333L13.7073 4.5"
+                  stroke="#3E4861"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                ></path>
+                <path
+                  d="M2.5 15.5V3.5C2.5 3.23478 2.60536 2.98043 2.79289 2.79289C2.98043 2.60536 3.23478 2.5 3.5 2.5H15.5"
+                  stroke="#3E4861"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                ></path>
+                <path
+                  d="M4.5 13.7073L2.854 15.3533C2.80757 15.3997 2.75243 15.4366 2.69175 15.4617C2.63107 15.4869 2.56602 15.4998 2.50033 15.4998C2.43465 15.4998 2.3696 15.4869 2.30892 15.4617C2.24823 15.4366 2.1931 15.3997 2.14667 15.3533L0.5 13.7073"
+                  stroke="#3E4861"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                ></path>
+                <path
+                  d="M14.5 15.5C14.7652 15.5 15.0196 15.3946 15.2071 15.2071C15.3946 15.0196 15.5 14.7652 15.5 14.5"
+                  stroke="#3E4861"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                ></path>
+                <path
+                  d="M12.5 15.5H11.5"
+                  stroke="#3E4861"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                ></path>
+                <path
+                  d="M9.5 15.5H8.5"
+                  stroke="#3E4861"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                ></path>
+                <path
+                  d="M6.5 15.5H5.5"
+                  stroke="#3E4861"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                ></path>
+                <path
+                  d="M15.5 12.5V11.5"
+                  stroke="#3E4861"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                ></path>
+                <path
+                  d="M15.5 9.5V8.5"
+                  stroke="#3E4861"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                ></path>
+                <path
+                  d="M15.5 6.5V5.5"
+                  stroke="#3E4861"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                ></path>
+              </svg>
+              1,258 sq.ft
+            </div>
+          </div>
+        </article>
+        <article class="listing-item">
+          <a href="https://tlp-webdesign.netlify.app/listing/"
+            ><img
+              loading="lazy"
+              width="480"
+              height="270"
+              src="./TopLuxuryProperty – Listing Page_files/saved_resource(2)"
+              alt="Listing 1"
+          /></a>
+          <div class="listing-header">
+            <a href="https://tlp-webdesign.netlify.app/listing/">
+              <p class="price">AED 14,000,000</p>
+              <h3>6 Bedroom | Custom Build | G Plus2 With Lift</h3>
+              <p class="location">at Legacy, Jumeirah Park, Dubai</p>
+            </a>
+          </div>
+          <div class="listing-footer">
+            <div class="listing-info">
+              <svg
+                stroke="currentColor"
+                fill="none"
+                stroke-width="2"
+                viewBox="0 0 24 24"
+                aria-hidden="true"
+                height="1em"
+                width="1em"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"
+                ></path>
+              </svg>
+              Apartment
+            </div>
+            <div class="listing-info">
+              <svg
+                width="16"
+                height="16"
+                viewBox="0 0 16 16"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M1.83333 7.5H14.1667C14.5203 7.5 14.8594 7.64048 15.1095 7.89052C15.3595 8.14057 15.5 8.47971 15.5 8.83333V12H0.5V8.83333C0.5 8.47971 0.640476 8.14057 0.890524 7.89052C1.14057 7.64048 1.47971 7.5 1.83333 7.5V7.5Z"
+                  stroke="#3E4861"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                ></path>
+                <path
+                  d="M0.5 12V14"
+                  stroke="#3E4861"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                ></path>
+                <path
+                  d="M15.5 12V14"
+                  stroke="#3E4861"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                ></path>
+                <path
+                  d="M14 7.5V3C14 2.73478 13.8946 2.48043 13.7071 2.29289C13.5196 2.10536 13.2652 2 13 2H3C2.73478 2 2.48043 2.10536 2.29289 2.29289C2.10536 2.48043 2 2.73478 2 3V7.5"
+                  stroke="#3E4861"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                ></path>
+                <path
+                  d="M5.66667 5H10.3333C10.5101 5 10.6797 5.07024 10.8047 5.19526C10.9298 5.32029 11 5.48986 11 5.66667V7.5H5V5.66667C5 5.48986 5.07024 5.32029 5.19526 5.19526C5.32029 5.07024 5.48986 5 5.66667 5V5Z"
+                  stroke="#3E4861"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                ></path>
+              </svg>
+              2 Bed
+            </div>
+            <div class="listing-info">
+              <svg
+                width="16"
+                height="16"
+                viewBox="0 0 16 16"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M13.7073 0.5L15.3539 2.14667C15.4004 2.19304 15.4372 2.24812 15.4624 2.30875C15.4875 2.36938 15.5004 2.43437 15.5004 2.5C15.5004 2.56563 15.4875 2.63062 15.4624 2.69125C15.4372 2.75188 15.4004 2.80696 15.3539 2.85333L13.7073 4.5"
+                  stroke="#3E4861"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                ></path>
+                <path
+                  d="M2.5 15.5V3.5C2.5 3.23478 2.60536 2.98043 2.79289 2.79289C2.98043 2.60536 3.23478 2.5 3.5 2.5H15.5"
+                  stroke="#3E4861"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                ></path>
+                <path
+                  d="M4.5 13.7073L2.854 15.3533C2.80757 15.3997 2.75243 15.4366 2.69175 15.4617C2.63107 15.4869 2.56602 15.4998 2.50033 15.4998C2.43465 15.4998 2.3696 15.4869 2.30892 15.4617C2.24823 15.4366 2.1931 15.3997 2.14667 15.3533L0.5 13.7073"
+                  stroke="#3E4861"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                ></path>
+                <path
+                  d="M14.5 15.5C14.7652 15.5 15.0196 15.3946 15.2071 15.2071C15.3946 15.0196 15.5 14.7652 15.5 14.5"
+                  stroke="#3E4861"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                ></path>
+                <path
+                  d="M12.5 15.5H11.5"
+                  stroke="#3E4861"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                ></path>
+                <path
+                  d="M9.5 15.5H8.5"
+                  stroke="#3E4861"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                ></path>
+                <path
+                  d="M6.5 15.5H5.5"
+                  stroke="#3E4861"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                ></path>
+                <path
+                  d="M15.5 12.5V11.5"
+                  stroke="#3E4861"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                ></path>
+                <path
+                  d="M15.5 9.5V8.5"
+                  stroke="#3E4861"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                ></path>
+                <path
+                  d="M15.5 6.5V5.5"
+                  stroke="#3E4861"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                ></path>
+              </svg>
+              1,258 sq.ft
+            </div>
+          </div>
+        </article>
+        <div class="expanded-listing-grid">
+          <h2>Related Searches</h2>
+          <ul class="expanded-grid">
+            <li>
+              <a
+                href="https://tlp-webdesign.netlify.app/property-listing-page/#"
+                >1 BR Apartments for Sale</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://tlp-webdesign.netlify.app/property-listing-page/#"
+                >2 BR Apartments for Sale</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://tlp-webdesign.netlify.app/property-listing-page/#"
+                >3 BR Apartments for Sale</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://tlp-webdesign.netlify.app/property-listing-page/#"
+                >4 BR Apartments for Sale</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://tlp-webdesign.netlify.app/property-listing-page/#"
+                >Dubai Marina Properties</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://tlp-webdesign.netlify.app/property-listing-page/#"
+                >Business Bay Properties</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://tlp-webdesign.netlify.app/property-listing-page/#"
+                >Downtown Dubai Properties</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://tlp-webdesign.netlify.app/property-listing-page/#"
+                >Dubailand Properties</a
+              >
+            </li>
+          </ul>
+        </div>
+        <article class="listing-item">
+          <a href="https://tlp-webdesign.netlify.app/listing/"
+            ><img
+              loading="lazy"
+              width="480"
+              height="270"
+              src="./TopLuxuryProperty – Listing Page_files/saved_resource"
+              alt="Listing 1"
+          /></a>
+          <div class="listing-header">
+            <a href="https://tlp-webdesign.netlify.app/listing/">
+              <p class="price">AED 3,099,999</p>
+              <h3>EXCLUSIVE | Full Lake View | Type 4E | 2 Bed</h3>
+              <p class="location">at Springs 15, The Springs, Dubai</p>
+            </a>
+          </div>
+          <div class="listing-footer">
+            <div class="listing-info">
+              <svg
+                stroke="currentColor"
+                fill="none"
+                stroke-width="2"
+                viewBox="0 0 24 24"
+                aria-hidden="true"
+                height="1em"
+                width="1em"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"
+                ></path>
+              </svg>
+              Apartment
+            </div>
+            <div class="listing-info">
+              <svg
+                width="16"
+                height="16"
+                viewBox="0 0 16 16"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M1.83333 7.5H14.1667C14.5203 7.5 14.8594 7.64048 15.1095 7.89052C15.3595 8.14057 15.5 8.47971 15.5 8.83333V12H0.5V8.83333C0.5 8.47971 0.640476 8.14057 0.890524 7.89052C1.14057 7.64048 1.47971 7.5 1.83333 7.5V7.5Z"
+                  stroke="#3E4861"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                ></path>
+                <path
+                  d="M0.5 12V14"
+                  stroke="#3E4861"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                ></path>
+                <path
+                  d="M15.5 12V14"
+                  stroke="#3E4861"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                ></path>
+                <path
+                  d="M14 7.5V3C14 2.73478 13.8946 2.48043 13.7071 2.29289C13.5196 2.10536 13.2652 2 13 2H3C2.73478 2 2.48043 2.10536 2.29289 2.29289C2.10536 2.48043 2 2.73478 2 3V7.5"
+                  stroke="#3E4861"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                ></path>
+                <path
+                  d="M5.66667 5H10.3333C10.5101 5 10.6797 5.07024 10.8047 5.19526C10.9298 5.32029 11 5.48986 11 5.66667V7.5H5V5.66667C5 5.48986 5.07024 5.32029 5.19526 5.19526C5.32029 5.07024 5.48986 5 5.66667 5V5Z"
+                  stroke="#3E4861"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                ></path>
+              </svg>
+              2 Bed
+            </div>
+            <div class="listing-info">
+              <svg
+                width="16"
+                height="16"
+                viewBox="0 0 16 16"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M13.7073 0.5L15.3539 2.14667C15.4004 2.19304 15.4372 2.24812 15.4624 2.30875C15.4875 2.36938 15.5004 2.43437 15.5004 2.5C15.5004 2.56563 15.4875 2.63062 15.4624 2.69125C15.4372 2.75188 15.4004 2.80696 15.3539 2.85333L13.7073 4.5"
+                  stroke="#3E4861"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                ></path>
+                <path
+                  d="M2.5 15.5V3.5C2.5 3.23478 2.60536 2.98043 2.79289 2.79289C2.98043 2.60536 3.23478 2.5 3.5 2.5H15.5"
+                  stroke="#3E4861"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                ></path>
+                <path
+                  d="M4.5 13.7073L2.854 15.3533C2.80757 15.3997 2.75243 15.4366 2.69175 15.4617C2.63107 15.4869 2.56602 15.4998 2.50033 15.4998C2.43465 15.4998 2.3696 15.4869 2.30892 15.4617C2.24823 15.4366 2.1931 15.3997 2.14667 15.3533L0.5 13.7073"
+                  stroke="#3E4861"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                ></path>
+                <path
+                  d="M14.5 15.5C14.7652 15.5 15.0196 15.3946 15.2071 15.2071C15.3946 15.0196 15.5 14.7652 15.5 14.5"
+                  stroke="#3E4861"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                ></path>
+                <path
+                  d="M12.5 15.5H11.5"
+                  stroke="#3E4861"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                ></path>
+                <path
+                  d="M9.5 15.5H8.5"
+                  stroke="#3E4861"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                ></path>
+                <path
+                  d="M6.5 15.5H5.5"
+                  stroke="#3E4861"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                ></path>
+                <path
+                  d="M15.5 12.5V11.5"
+                  stroke="#3E4861"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                ></path>
+                <path
+                  d="M15.5 9.5V8.5"
+                  stroke="#3E4861"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                ></path>
+                <path
+                  d="M15.5 6.5V5.5"
+                  stroke="#3E4861"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                ></path>
+              </svg>
+              1,258 sq.ft
+            </div>
+          </div>
+        </article>
+        <article class="listing-item">
+          <a href="https://tlp-webdesign.netlify.app/listing/"
+            ><img
+              loading="lazy"
+              width="480"
+              height="270"
+              src="./TopLuxuryProperty – Listing Page_files/saved_resource(1)"
+              alt="Listing 1"
+          /></a>
+          <div class="listing-header">
+            <a href="https://tlp-webdesign.netlify.app/listing/">
+              <p class="price">AED 26,500,000</p>
+              <h3>Exclusive L2 Hattan | Lake &amp; Skyline View</h3>
+              <p class="location">at Meadows 7, Meadows.</p>
+            </a>
+          </div>
+          <div class="listing-footer">
+            <div class="listing-info">
+              <svg
+                stroke="currentColor"
+                fill="none"
+                stroke-width="2"
+                viewBox="0 0 24 24"
+                aria-hidden="true"
+                height="1em"
+                width="1em"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"
+                ></path>
+              </svg>
+              Apartment
+            </div>
+            <div class="listing-info">
+              <svg
+                width="16"
+                height="16"
+                viewBox="0 0 16 16"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M1.83333 7.5H14.1667C14.5203 7.5 14.8594 7.64048 15.1095 7.89052C15.3595 8.14057 15.5 8.47971 15.5 8.83333V12H0.5V8.83333C0.5 8.47971 0.640476 8.14057 0.890524 7.89052C1.14057 7.64048 1.47971 7.5 1.83333 7.5V7.5Z"
+                  stroke="#3E4861"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                ></path>
+                <path
+                  d="M0.5 12V14"
+                  stroke="#3E4861"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                ></path>
+                <path
+                  d="M15.5 12V14"
+                  stroke="#3E4861"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                ></path>
+                <path
+                  d="M14 7.5V3C14 2.73478 13.8946 2.48043 13.7071 2.29289C13.5196 2.10536 13.2652 2 13 2H3C2.73478 2 2.48043 2.10536 2.29289 2.29289C2.10536 2.48043 2 2.73478 2 3V7.5"
+                  stroke="#3E4861"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                ></path>
+                <path
+                  d="M5.66667 5H10.3333C10.5101 5 10.6797 5.07024 10.8047 5.19526C10.9298 5.32029 11 5.48986 11 5.66667V7.5H5V5.66667C5 5.48986 5.07024 5.32029 5.19526 5.19526C5.32029 5.07024 5.48986 5 5.66667 5V5Z"
+                  stroke="#3E4861"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                ></path>
+              </svg>
+              2 Bed
+            </div>
+            <div class="listing-info">
+              <svg
+                width="16"
+                height="16"
+                viewBox="0 0 16 16"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M13.7073 0.5L15.3539 2.14667C15.4004 2.19304 15.4372 2.24812 15.4624 2.30875C15.4875 2.36938 15.5004 2.43437 15.5004 2.5C15.5004 2.56563 15.4875 2.63062 15.4624 2.69125C15.4372 2.75188 15.4004 2.80696 15.3539 2.85333L13.7073 4.5"
+                  stroke="#3E4861"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                ></path>
+                <path
+                  d="M2.5 15.5V3.5C2.5 3.23478 2.60536 2.98043 2.79289 2.79289C2.98043 2.60536 3.23478 2.5 3.5 2.5H15.5"
+                  stroke="#3E4861"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                ></path>
+                <path
+                  d="M4.5 13.7073L2.854 15.3533C2.80757 15.3997 2.75243 15.4366 2.69175 15.4617C2.63107 15.4869 2.56602 15.4998 2.50033 15.4998C2.43465 15.4998 2.3696 15.4869 2.30892 15.4617C2.24823 15.4366 2.1931 15.3997 2.14667 15.3533L0.5 13.7073"
+                  stroke="#3E4861"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                ></path>
+                <path
+                  d="M14.5 15.5C14.7652 15.5 15.0196 15.3946 15.2071 15.2071C15.3946 15.0196 15.5 14.7652 15.5 14.5"
+                  stroke="#3E4861"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                ></path>
+                <path
+                  d="M12.5 15.5H11.5"
+                  stroke="#3E4861"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                ></path>
+                <path
+                  d="M9.5 15.5H8.5"
+                  stroke="#3E4861"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                ></path>
+                <path
+                  d="M6.5 15.5H5.5"
+                  stroke="#3E4861"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                ></path>
+                <path
+                  d="M15.5 12.5V11.5"
+                  stroke="#3E4861"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                ></path>
+                <path
+                  d="M15.5 9.5V8.5"
+                  stroke="#3E4861"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                ></path>
+                <path
+                  d="M15.5 6.5V5.5"
+                  stroke="#3E4861"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                ></path>
+              </svg>
+              1,258 sq.ft
+            </div>
+          </div>
+        </article>
+        <article class="listing-item">
+          <a href="https://tlp-webdesign.netlify.app/listing/"
+            ><img
+              loading="lazy"
+              width="480"
+              height="270"
+              src="./TopLuxuryProperty – Listing Page_files/saved_resource(2)"
+              alt="Listing 1"
+          /></a>
+          <div class="listing-header">
+            <a href="https://tlp-webdesign.netlify.app/listing/">
+              <p class="price">AED 14,000,000</p>
+              <h3>6 Bedroom | Custom Build | G Plus2 With Lift</h3>
+              <p class="location">at Legacy, Jumeirah Park, Dubai</p>
+            </a>
+          </div>
+          <div class="listing-footer">
+            <div class="listing-info">
+              <svg
+                stroke="currentColor"
+                fill="none"
+                stroke-width="2"
+                viewBox="0 0 24 24"
+                aria-hidden="true"
+                height="1em"
+                width="1em"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"
+                ></path>
+              </svg>
+              Apartment
+            </div>
+            <div class="listing-info">
+              <svg
+                width="16"
+                height="16"
+                viewBox="0 0 16 16"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M1.83333 7.5H14.1667C14.5203 7.5 14.8594 7.64048 15.1095 7.89052C15.3595 8.14057 15.5 8.47971 15.5 8.83333V12H0.5V8.83333C0.5 8.47971 0.640476 8.14057 0.890524 7.89052C1.14057 7.64048 1.47971 7.5 1.83333 7.5V7.5Z"
+                  stroke="#3E4861"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                ></path>
+                <path
+                  d="M0.5 12V14"
+                  stroke="#3E4861"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                ></path>
+                <path
+                  d="M15.5 12V14"
+                  stroke="#3E4861"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                ></path>
+                <path
+                  d="M14 7.5V3C14 2.73478 13.8946 2.48043 13.7071 2.29289C13.5196 2.10536 13.2652 2 13 2H3C2.73478 2 2.48043 2.10536 2.29289 2.29289C2.10536 2.48043 2 2.73478 2 3V7.5"
+                  stroke="#3E4861"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                ></path>
+                <path
+                  d="M5.66667 5H10.3333C10.5101 5 10.6797 5.07024 10.8047 5.19526C10.9298 5.32029 11 5.48986 11 5.66667V7.5H5V5.66667C5 5.48986 5.07024 5.32029 5.19526 5.19526C5.32029 5.07024 5.48986 5 5.66667 5V5Z"
+                  stroke="#3E4861"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                ></path>
+              </svg>
+              2 Bed
+            </div>
+            <div class="listing-info">
+              <svg
+                width="16"
+                height="16"
+                viewBox="0 0 16 16"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M13.7073 0.5L15.3539 2.14667C15.4004 2.19304 15.4372 2.24812 15.4624 2.30875C15.4875 2.36938 15.5004 2.43437 15.5004 2.5C15.5004 2.56563 15.4875 2.63062 15.4624 2.69125C15.4372 2.75188 15.4004 2.80696 15.3539 2.85333L13.7073 4.5"
+                  stroke="#3E4861"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                ></path>
+                <path
+                  d="M2.5 15.5V3.5C2.5 3.23478 2.60536 2.98043 2.79289 2.79289C2.98043 2.60536 3.23478 2.5 3.5 2.5H15.5"
+                  stroke="#3E4861"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                ></path>
+                <path
+                  d="M4.5 13.7073L2.854 15.3533C2.80757 15.3997 2.75243 15.4366 2.69175 15.4617C2.63107 15.4869 2.56602 15.4998 2.50033 15.4998C2.43465 15.4998 2.3696 15.4869 2.30892 15.4617C2.24823 15.4366 2.1931 15.3997 2.14667 15.3533L0.5 13.7073"
+                  stroke="#3E4861"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                ></path>
+                <path
+                  d="M14.5 15.5C14.7652 15.5 15.0196 15.3946 15.2071 15.2071C15.3946 15.0196 15.5 14.7652 15.5 14.5"
+                  stroke="#3E4861"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                ></path>
+                <path
+                  d="M12.5 15.5H11.5"
+                  stroke="#3E4861"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                ></path>
+                <path
+                  d="M9.5 15.5H8.5"
+                  stroke="#3E4861"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                ></path>
+                <path
+                  d="M6.5 15.5H5.5"
+                  stroke="#3E4861"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                ></path>
+                <path
+                  d="M15.5 12.5V11.5"
+                  stroke="#3E4861"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                ></path>
+                <path
+                  d="M15.5 9.5V8.5"
+                  stroke="#3E4861"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                ></path>
+                <path
+                  d="M15.5 6.5V5.5"
+                  stroke="#3E4861"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                ></path>
+              </svg>
+              1,258 sq.ft
+            </div>
+          </div>
+        </article>
+        <article class="listing-item">
+          <a href="https://tlp-webdesign.netlify.app/listing/"
+            ><img
+              loading="lazy"
+              width="480"
+              height="270"
+              src="./TopLuxuryProperty – Listing Page_files/saved_resource"
+              alt="Listing 1"
+          /></a>
+          <div class="listing-header">
+            <a href="https://tlp-webdesign.netlify.app/listing/">
+              <p class="price">AED 3,099,999</p>
+              <h3>EXCLUSIVE | Full Lake View | Type 4E | 2 Bed</h3>
+              <p class="location">at Springs 15, The Springs, Dubai</p>
+            </a>
+          </div>
+          <div class="listing-footer">
+            <div class="listing-info">
+              <svg
+                stroke="currentColor"
+                fill="none"
+                stroke-width="2"
+                viewBox="0 0 24 24"
+                aria-hidden="true"
+                height="1em"
+                width="1em"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"
+                ></path>
+              </svg>
+              Apartment
+            </div>
+            <div class="listing-info">
+              <svg
+                width="16"
+                height="16"
+                viewBox="0 0 16 16"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M1.83333 7.5H14.1667C14.5203 7.5 14.8594 7.64048 15.1095 7.89052C15.3595 8.14057 15.5 8.47971 15.5 8.83333V12H0.5V8.83333C0.5 8.47971 0.640476 8.14057 0.890524 7.89052C1.14057 7.64048 1.47971 7.5 1.83333 7.5V7.5Z"
+                  stroke="#3E4861"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                ></path>
+                <path
+                  d="M0.5 12V14"
+                  stroke="#3E4861"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                ></path>
+                <path
+                  d="M15.5 12V14"
+                  stroke="#3E4861"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                ></path>
+                <path
+                  d="M14 7.5V3C14 2.73478 13.8946 2.48043 13.7071 2.29289C13.5196 2.10536 13.2652 2 13 2H3C2.73478 2 2.48043 2.10536 2.29289 2.29289C2.10536 2.48043 2 2.73478 2 3V7.5"
+                  stroke="#3E4861"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                ></path>
+                <path
+                  d="M5.66667 5H10.3333C10.5101 5 10.6797 5.07024 10.8047 5.19526C10.9298 5.32029 11 5.48986 11 5.66667V7.5H5V5.66667C5 5.48986 5.07024 5.32029 5.19526 5.19526C5.32029 5.07024 5.48986 5 5.66667 5V5Z"
+                  stroke="#3E4861"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                ></path>
+              </svg>
+              2 Bed
+            </div>
+            <div class="listing-info">
+              <svg
+                width="16"
+                height="16"
+                viewBox="0 0 16 16"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M13.7073 0.5L15.3539 2.14667C15.4004 2.19304 15.4372 2.24812 15.4624 2.30875C15.4875 2.36938 15.5004 2.43437 15.5004 2.5C15.5004 2.56563 15.4875 2.63062 15.4624 2.69125C15.4372 2.75188 15.4004 2.80696 15.3539 2.85333L13.7073 4.5"
+                  stroke="#3E4861"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                ></path>
+                <path
+                  d="M2.5 15.5V3.5C2.5 3.23478 2.60536 2.98043 2.79289 2.79289C2.98043 2.60536 3.23478 2.5 3.5 2.5H15.5"
+                  stroke="#3E4861"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                ></path>
+                <path
+                  d="M4.5 13.7073L2.854 15.3533C2.80757 15.3997 2.75243 15.4366 2.69175 15.4617C2.63107 15.4869 2.56602 15.4998 2.50033 15.4998C2.43465 15.4998 2.3696 15.4869 2.30892 15.4617C2.24823 15.4366 2.1931 15.3997 2.14667 15.3533L0.5 13.7073"
+                  stroke="#3E4861"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                ></path>
+                <path
+                  d="M14.5 15.5C14.7652 15.5 15.0196 15.3946 15.2071 15.2071C15.3946 15.0196 15.5 14.7652 15.5 14.5"
+                  stroke="#3E4861"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                ></path>
+                <path
+                  d="M12.5 15.5H11.5"
+                  stroke="#3E4861"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                ></path>
+                <path
+                  d="M9.5 15.5H8.5"
+                  stroke="#3E4861"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                ></path>
+                <path
+                  d="M6.5 15.5H5.5"
+                  stroke="#3E4861"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                ></path>
+                <path
+                  d="M15.5 12.5V11.5"
+                  stroke="#3E4861"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                ></path>
+                <path
+                  d="M15.5 9.5V8.5"
+                  stroke="#3E4861"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                ></path>
+                <path
+                  d="M15.5 6.5V5.5"
+                  stroke="#3E4861"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                ></path>
+              </svg>
+              1,258 sq.ft
+            </div>
+          </div>
+        </article>
+        <article class="listing-item">
+          <a href="https://tlp-webdesign.netlify.app/listing/"
+            ><img
+              loading="lazy"
+              width="480"
+              height="270"
+              src="./TopLuxuryProperty – Listing Page_files/saved_resource(1)"
+              alt="Listing 1"
+          /></a>
+          <div class="listing-header">
+            <a href="https://tlp-webdesign.netlify.app/listing/">
+              <p class="price">AED 26,500,000</p>
+              <h3>Exclusive L2 Hattan | Lake &amp; Skyline View</h3>
+              <p class="location">at Meadows 7, Meadows.</p>
+            </a>
+          </div>
+          <div class="listing-footer">
+            <div class="listing-info">
+              <svg
+                stroke="currentColor"
+                fill="none"
+                stroke-width="2"
+                viewBox="0 0 24 24"
+                aria-hidden="true"
+                height="1em"
+                width="1em"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"
+                ></path>
+              </svg>
+              Apartment
+            </div>
+            <div class="listing-info">
+              <svg
+                width="16"
+                height="16"
+                viewBox="0 0 16 16"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M1.83333 7.5H14.1667C14.5203 7.5 14.8594 7.64048 15.1095 7.89052C15.3595 8.14057 15.5 8.47971 15.5 8.83333V12H0.5V8.83333C0.5 8.47971 0.640476 8.14057 0.890524 7.89052C1.14057 7.64048 1.47971 7.5 1.83333 7.5V7.5Z"
+                  stroke="#3E4861"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                ></path>
+                <path
+                  d="M0.5 12V14"
+                  stroke="#3E4861"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                ></path>
+                <path
+                  d="M15.5 12V14"
+                  stroke="#3E4861"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                ></path>
+                <path
+                  d="M14 7.5V3C14 2.73478 13.8946 2.48043 13.7071 2.29289C13.5196 2.10536 13.2652 2 13 2H3C2.73478 2 2.48043 2.10536 2.29289 2.29289C2.10536 2.48043 2 2.73478 2 3V7.5"
+                  stroke="#3E4861"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                ></path>
+                <path
+                  d="M5.66667 5H10.3333C10.5101 5 10.6797 5.07024 10.8047 5.19526C10.9298 5.32029 11 5.48986 11 5.66667V7.5H5V5.66667C5 5.48986 5.07024 5.32029 5.19526 5.19526C5.32029 5.07024 5.48986 5 5.66667 5V5Z"
+                  stroke="#3E4861"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                ></path>
+              </svg>
+              2 Bed
+            </div>
+            <div class="listing-info">
+              <svg
+                width="16"
+                height="16"
+                viewBox="0 0 16 16"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M13.7073 0.5L15.3539 2.14667C15.4004 2.19304 15.4372 2.24812 15.4624 2.30875C15.4875 2.36938 15.5004 2.43437 15.5004 2.5C15.5004 2.56563 15.4875 2.63062 15.4624 2.69125C15.4372 2.75188 15.4004 2.80696 15.3539 2.85333L13.7073 4.5"
+                  stroke="#3E4861"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                ></path>
+                <path
+                  d="M2.5 15.5V3.5C2.5 3.23478 2.60536 2.98043 2.79289 2.79289C2.98043 2.60536 3.23478 2.5 3.5 2.5H15.5"
+                  stroke="#3E4861"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                ></path>
+                <path
+                  d="M4.5 13.7073L2.854 15.3533C2.80757 15.3997 2.75243 15.4366 2.69175 15.4617C2.63107 15.4869 2.56602 15.4998 2.50033 15.4998C2.43465 15.4998 2.3696 15.4869 2.30892 15.4617C2.24823 15.4366 2.1931 15.3997 2.14667 15.3533L0.5 13.7073"
+                  stroke="#3E4861"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                ></path>
+                <path
+                  d="M14.5 15.5C14.7652 15.5 15.0196 15.3946 15.2071 15.2071C15.3946 15.0196 15.5 14.7652 15.5 14.5"
+                  stroke="#3E4861"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                ></path>
+                <path
+                  d="M12.5 15.5H11.5"
+                  stroke="#3E4861"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                ></path>
+                <path
+                  d="M9.5 15.5H8.5"
+                  stroke="#3E4861"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                ></path>
+                <path
+                  d="M6.5 15.5H5.5"
+                  stroke="#3E4861"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                ></path>
+                <path
+                  d="M15.5 12.5V11.5"
+                  stroke="#3E4861"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                ></path>
+                <path
+                  d="M15.5 9.5V8.5"
+                  stroke="#3E4861"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                ></path>
+                <path
+                  d="M15.5 6.5V5.5"
+                  stroke="#3E4861"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                ></path>
+              </svg>
+              1,258 sq.ft
+            </div>
+          </div>
+        </article>
+        <article class="listing-item">
+          <a href="https://tlp-webdesign.netlify.app/listing/"
+            ><img
+              loading="lazy"
+              width="480"
+              height="270"
+              src="./TopLuxuryProperty – Listing Page_files/saved_resource(2)"
+              alt="Listing 1"
+          /></a>
+          <div class="listing-header">
+            <a href="https://tlp-webdesign.netlify.app/listing/">
+              <p class="price">AED 14,000,000</p>
+              <h3>6 Bedroom | Custom Build | G Plus2 With Lift</h3>
+              <p class="location">at Legacy, Jumeirah Park, Dubai</p>
+            </a>
+          </div>
+          <div class="listing-footer">
+            <div class="listing-info">
+              <svg
+                stroke="currentColor"
+                fill="none"
+                stroke-width="2"
+                viewBox="0 0 24 24"
+                aria-hidden="true"
+                height="1em"
+                width="1em"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"
+                ></path>
+              </svg>
+              Apartment
+            </div>
+            <div class="listing-info">
+              <svg
+                width="16"
+                height="16"
+                viewBox="0 0 16 16"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M1.83333 7.5H14.1667C14.5203 7.5 14.8594 7.64048 15.1095 7.89052C15.3595 8.14057 15.5 8.47971 15.5 8.83333V12H0.5V8.83333C0.5 8.47971 0.640476 8.14057 0.890524 7.89052C1.14057 7.64048 1.47971 7.5 1.83333 7.5V7.5Z"
+                  stroke="#3E4861"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                ></path>
+                <path
+                  d="M0.5 12V14"
+                  stroke="#3E4861"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                ></path>
+                <path
+                  d="M15.5 12V14"
+                  stroke="#3E4861"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                ></path>
+                <path
+                  d="M14 7.5V3C14 2.73478 13.8946 2.48043 13.7071 2.29289C13.5196 2.10536 13.2652 2 13 2H3C2.73478 2 2.48043 2.10536 2.29289 2.29289C2.10536 2.48043 2 2.73478 2 3V7.5"
+                  stroke="#3E4861"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                ></path>
+                <path
+                  d="M5.66667 5H10.3333C10.5101 5 10.6797 5.07024 10.8047 5.19526C10.9298 5.32029 11 5.48986 11 5.66667V7.5H5V5.66667C5 5.48986 5.07024 5.32029 5.19526 5.19526C5.32029 5.07024 5.48986 5 5.66667 5V5Z"
+                  stroke="#3E4861"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                ></path>
+              </svg>
+              2 Bed
+            </div>
+            <div class="listing-info">
+              <svg
+                width="16"
+                height="16"
+                viewBox="0 0 16 16"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M13.7073 0.5L15.3539 2.14667C15.4004 2.19304 15.4372 2.24812 15.4624 2.30875C15.4875 2.36938 15.5004 2.43437 15.5004 2.5C15.5004 2.56563 15.4875 2.63062 15.4624 2.69125C15.4372 2.75188 15.4004 2.80696 15.3539 2.85333L13.7073 4.5"
+                  stroke="#3E4861"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                ></path>
+                <path
+                  d="M2.5 15.5V3.5C2.5 3.23478 2.60536 2.98043 2.79289 2.79289C2.98043 2.60536 3.23478 2.5 3.5 2.5H15.5"
+                  stroke="#3E4861"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                ></path>
+                <path
+                  d="M4.5 13.7073L2.854 15.3533C2.80757 15.3997 2.75243 15.4366 2.69175 15.4617C2.63107 15.4869 2.56602 15.4998 2.50033 15.4998C2.43465 15.4998 2.3696 15.4869 2.30892 15.4617C2.24823 15.4366 2.1931 15.3997 2.14667 15.3533L0.5 13.7073"
+                  stroke="#3E4861"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                ></path>
+                <path
+                  d="M14.5 15.5C14.7652 15.5 15.0196 15.3946 15.2071 15.2071C15.3946 15.0196 15.5 14.7652 15.5 14.5"
+                  stroke="#3E4861"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                ></path>
+                <path
+                  d="M12.5 15.5H11.5"
+                  stroke="#3E4861"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                ></path>
+                <path
+                  d="M9.5 15.5H8.5"
+                  stroke="#3E4861"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                ></path>
+                <path
+                  d="M6.5 15.5H5.5"
+                  stroke="#3E4861"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                ></path>
+                <path
+                  d="M15.5 12.5V11.5"
+                  stroke="#3E4861"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                ></path>
+                <path
+                  d="M15.5 9.5V8.5"
+                  stroke="#3E4861"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                ></path>
+                <path
+                  d="M15.5 6.5V5.5"
+                  stroke="#3E4861"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                ></path>
+              </svg>
+              1,258 sq.ft
+            </div>
+          </div>
+        </article>
+      </section>
+      <nav class="section-container">
+        <ul class="pagination">
+          <li>
+            <a href="https://tlp-webdesign.netlify.app/property-listing-page/#"
+              ><svg
+                width="16"
+                height="17"
+                viewBox="0 0 16 17"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M10.0332 13.7416L5.68654 9.39497C5.1732 8.88164 5.1732 8.04164 5.68654 7.52831L10.0332 3.18164"
+                  stroke="#121212"
+                  stroke-width="1.5"
+                  stroke-miterlimit="10"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                ></path></svg
+            ></a>
+          </li>
+          <li>
+            <a
+              class="current-page"
+              href="https://tlp-webdesign.netlify.app/property-listing-page/#"
+              >1</a
+            >
+          </li>
+          <li>
+            <a href="https://tlp-webdesign.netlify.app/property-listing-page/#"
+              >2</a
+            >
+          </li>
+          <li>
+            <a href="https://tlp-webdesign.netlify.app/property-listing-page/#"
+              >3</a
+            >
+          </li>
+          <li>...</li>
+          <li>
+            <a href="https://tlp-webdesign.netlify.app/property-listing-page/#"
+              >5</a
+            >
+          </li>
+          <li>
+            <a href="https://tlp-webdesign.netlify.app/property-listing-page/#"
+              ><svg
+                width="16"
+                height="17"
+                viewBox="0 0 16 17"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M5.9668 3.18219L10.3135 7.52885C10.8268 8.04219 10.8268 8.88219 10.3135 9.39552L5.9668 13.7422"
+                  stroke="#121212"
+                  stroke-width="1.5"
+                  stroke-miterlimit="10"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                ></path></svg
+            ></a>
+          </li>
+        </ul>
+      </nav>
+      <section class="related-areas">
+        <div class="section-container">
+          <h2>Nearby Areas</h2>
+          <div class="related-area-list">
+            <a
+              href="https://tlp-webdesign.netlify.app/property-listing-page/#"
+              rel="noopener noreferrer"
+            >
+              <div class="related-area-item">
+                <img
+                  loading="lazy"
+                  width="303px"
+                  height="204px"
+                  src="./TopLuxuryProperty – Listing Page_files/saved_resource(3)"
+                  alt="Dubai Marina"
+                />
+                <div class="related-item-header">From AED 1.5M</div>
+                <div class="related-item-footer">
+                  <h3>Dubai Marina</h3>
+                  <svg
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M14.43 5.92969L20.5 11.9997L14.43 18.0697M3.5 11.9997H20.33"
+                      stroke="white"
+                      stroke-width="1.5"
+                      stroke-miterlimit="10"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    ></path>
+                  </svg>
+                </div>
+              </div>
+            </a>
+            <a
+              href="https://tlp-webdesign.netlify.app/property-listing-page/#"
+              rel="noopener noreferrer"
+            >
+              <div class="related-area-item">
+                <img
+                  loading="lazy"
+                  width="303px"
+                  height="204px"
+                  src="./TopLuxuryProperty – Listing Page_files/saved_resource(3)"
+                  alt="Dubai Marina"
+                />
+                <div class="related-item-header">From AED 1.5M</div>
+                <div class="related-item-footer">
+                  <h3>Dubai Marina</h3>
+                  <svg
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M14.43 5.92969L20.5 11.9997L14.43 18.0697M3.5 11.9997H20.33"
+                      stroke="white"
+                      stroke-width="1.5"
+                      stroke-miterlimit="10"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    ></path>
+                  </svg>
+                </div>
+              </div>
+            </a>
+            <a
+              href="https://tlp-webdesign.netlify.app/property-listing-page/#"
+              rel="noopener noreferrer"
+            >
+              <div class="related-area-item">
+                <img
+                  loading="lazy"
+                  width="303px"
+                  height="204px"
+                  src="./TopLuxuryProperty – Listing Page_files/saved_resource(3)"
+                  alt="Dubai Marina"
+                />
+                <div class="related-item-header">From AED 1.5M</div>
+                <div class="related-item-footer">
+                  <h3>Dubai Marina</h3>
+                  <svg
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M14.43 5.92969L20.5 11.9997L14.43 18.0697M3.5 11.9997H20.33"
+                      stroke="white"
+                      stroke-width="1.5"
+                      stroke-miterlimit="10"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    ></path>
+                  </svg>
+                </div>
+              </div>
+            </a>
+            <a
+              href="https://tlp-webdesign.netlify.app/property-listing-page/#"
+              rel="noopener noreferrer"
+            >
+              <div class="related-area-item">
+                <img
+                  loading="lazy"
+                  width="303px"
+                  height="204px"
+                  src="./TopLuxuryProperty – Listing Page_files/saved_resource(3)"
+                  alt="Dubai Marina"
+                />
+                <div class="related-item-header">From AED 1.5M</div>
+                <div class="related-item-footer">
+                  <h3>Dubai Marina</h3>
+                  <svg
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M14.43 5.92969L20.5 11.9997L14.43 18.0697M3.5 11.9997H20.33"
+                      stroke="white"
+                      stroke-width="1.5"
+                      stroke-miterlimit="10"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    ></path>
+                  </svg>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+      </section>
+      <article class="section-container content-container">
+        <div class="entry-content">
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quae ad
+            deserunt iste maxime iure. Animi delectus architecto, ipsa cum harum
+            placeat, sint voluptate fugiat minima obcaecati, possimus voluptatum
+            consequuntur! Facere. In saepe aliquid, corrupti perspiciatis
+            pariatur tenetur officia placeat adipisci cum labore iure quidem
+            praesentium neque! Consectetur iure id illo vel exercitationem iusto
+            consequatur, nisi commodi aut ea odit et? Iusto voluptates
+            accusantium quo rerum! Excepturi illum doloribus totam saepe veniam,
+            tempora, quis cumque reiciendis quibusdam facilis quo
+            exercitationem! Quas eligendi omnis error atque ipsum placeat
+            voluptatibus magnam iusto maiores. Maxime commodi repellat
+            voluptates quam eaque. Odio sequi laudantium deleniti repellat ullam
+            repudiandae consequatur. Quaerat laudantium est, commodi, libero
+            eveniet ex non quisquam cum neque, saepe repellendus id quam quis!
+            Laudantium blanditiis cum praesentium excepturi nisi totam facere,
+            tempora doloribus amet natus id impedit eius fugit iste,
+            necessitatibus minus nemo veritatis. Necessitatibus provident
+            temporibus harum corrupti, ipsam magni hic dicta!
+          </p>
+          <h2>Lorem Ipsum</h2>
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minus quos
+            blanditiis corrupti reiciendis doloribus, non architecto voluptatem
+            eligendi ullam maiores earum ex culpa eveniet nobis ad sint?
+            Officia, rerum exercitationem! Saepe ab unde maiores doloremque
+            explicabo quibusdam quas labore adipisci necessitatibus eaque et
+            deserunt iusto aliquid molestiae sequi cum sint laborum pariatur
+            placeat recusandae dolorum voluptatum vero, eos doloribus? Natus.
+          </p>
+        </div>
+      </article>
+    </main>
+    <footer>
+      <div class="footer-content-container">
+        <h3>Properties for Sale</h3>
+        <ul class="footer-links-grid">
+          <li>
+            <a href="https://tlp-webdesign.netlify.app/property-listing-page/"
+              >DAMAC Cavalli Couture</a
+            >
+          </li>
+          <li>
+            <a href="https://tlp-webdesign.netlify.app/property-listing-page/"
+              >Danube GenZ</a
+            >
+          </li>
+          <li>
+            <a href="https://tlp-webdesign.netlify.app/property-listing-page/"
+              >DAMAC Lagoons Monte
+            </a>
+          </li>
+          <li>
+            <a href="https://tlp-webdesign.netlify.app/property-listing-page/"
+              >SOBHA one</a
+            >
+          </li>
+          <li>
+            <a href="https://tlp-webdesign.netlify.app/property-listing-page/"
+              >Carlo</a
+            >
+          </li>
+          <li>
+            <a href="https://tlp-webdesign.netlify.app/property-listing-page/"
+              >DAMAC Cavalli Couture</a
+            >
+          </li>
+          <li>
+            <a href="https://tlp-webdesign.netlify.app/property-listing-page/"
+              >Danube GenZ</a
+            >
+          </li>
+          <li>
+            <a href="https://tlp-webdesign.netlify.app/property-listing-page/"
+              >DAMAC Lagoons Monte
+            </a>
+          </li>
+          <li>
+            <a href="https://tlp-webdesign.netlify.app/property-listing-page/"
+              >SOBHA one</a
+            >
+          </li>
+          <li>
+            <a href="https://tlp-webdesign.netlify.app/property-listing-page/"
+              >Carlo</a
+            >
+          </li>
+          <li>
+            <a href="https://tlp-webdesign.netlify.app/property-listing-page/"
+              >DAMAC Cavalli Couture</a
+            >
+          </li>
+          <li>
+            <a href="https://tlp-webdesign.netlify.app/property-listing-page/"
+              >Danube GenZ</a
+            >
+          </li>
+          <li>
+            <a href="https://tlp-webdesign.netlify.app/property-listing-page/"
+              >DAMAC Lagoons Monte
+            </a>
+          </li>
+          <li>
+            <a href="https://tlp-webdesign.netlify.app/property-listing-page/"
+              >SOBHA one</a
+            >
+          </li>
+          <li>
+            <a href="https://tlp-webdesign.netlify.app/property-listing-page/"
+              >Carlo</a
+            >
+          </li>
+          <li>
+            <a href="https://tlp-webdesign.netlify.app/property-listing-page/"
+              >DAMAC Cavalli Couture</a
+            >
+          </li>
+          <li>
+            <a href="https://tlp-webdesign.netlify.app/property-listing-page/"
+              >Danube GenZ</a
+            >
+          </li>
+          <li>
+            <a href="https://tlp-webdesign.netlify.app/property-listing-page/"
+              >DAMAC Lagoons Monte
+            </a>
+          </li>
+          <li>
+            <a href="https://tlp-webdesign.netlify.app/property-listing-page/"
+              >SOBHA one</a
+            >
+          </li>
+          <li>
+            <a href="https://tlp-webdesign.netlify.app/property-listing-page/"
+              >Carlo</a
+            >
+          </li>
+        </ul>
+      </div>
+
+      <div class="footer-content-container">
+        <h3>Top Communities</h3>
+        <ul class="footer-links-grid">
+          <li>
+            <a href="https://tlp-webdesign.netlify.app/property-listing-page/"
+              >DAMAC Cavalli Couture</a
+            >
+          </li>
+          <li>
+            <a href="https://tlp-webdesign.netlify.app/property-listing-page/"
+              >Danube GenZ</a
+            >
+          </li>
+          <li>
+            <a href="https://tlp-webdesign.netlify.app/property-listing-page/"
+              >DAMAC Lagoons Monte
+            </a>
+          </li>
+          <li>
+            <a href="https://tlp-webdesign.netlify.app/property-listing-page/"
+              >SOBHA one</a
+            >
+          </li>
+          <li>
+            <a href="https://tlp-webdesign.netlify.app/property-listing-page/"
+              >Carlo</a
+            >
+          </li>
+          <li>
+            <a href="https://tlp-webdesign.netlify.app/property-listing-page/"
+              >DAMAC Cavalli Couture</a
+            >
+          </li>
+          <li>
+            <a href="https://tlp-webdesign.netlify.app/property-listing-page/"
+              >Danube GenZ</a
+            >
+          </li>
+          <li>
+            <a href="https://tlp-webdesign.netlify.app/property-listing-page/"
+              >DAMAC Lagoons Monte
+            </a>
+          </li>
+          <li>
+            <a href="https://tlp-webdesign.netlify.app/property-listing-page/"
+              >SOBHA one</a
+            >
+          </li>
+          <li>
+            <a href="https://tlp-webdesign.netlify.app/property-listing-page/"
+              >Carlo</a
+            >
+          </li>
+          <li>
+            <a href="https://tlp-webdesign.netlify.app/property-listing-page/"
+              >DAMAC Cavalli Couture</a
+            >
+          </li>
+          <li>
+            <a href="https://tlp-webdesign.netlify.app/property-listing-page/"
+              >Danube GenZ</a
+            >
+          </li>
+          <li>
+            <a href="https://tlp-webdesign.netlify.app/property-listing-page/"
+              >DAMAC Lagoons Monte
+            </a>
+          </li>
+          <li>
+            <a href="https://tlp-webdesign.netlify.app/property-listing-page/"
+              >SOBHA one</a
+            >
+          </li>
+          <li>
+            <a href="https://tlp-webdesign.netlify.app/property-listing-page/"
+              >Carlo</a
+            >
+          </li>
+          <li>
+            <a href="https://tlp-webdesign.netlify.app/property-listing-page/"
+              >DAMAC Cavalli Couture</a
+            >
+          </li>
+          <li>
+            <a href="https://tlp-webdesign.netlify.app/property-listing-page/"
+              >Danube GenZ</a
+            >
+          </li>
+          <li>
+            <a href="https://tlp-webdesign.netlify.app/property-listing-page/"
+              >DAMAC Lagoons Monte
+            </a>
+          </li>
+          <li>
+            <a href="https://tlp-webdesign.netlify.app/property-listing-page/"
+              >SOBHA one</a
+            >
+          </li>
+          <li>
+            <a href="https://tlp-webdesign.netlify.app/property-listing-page/"
+              >Carlo</a
+            >
+          </li>
+        </ul>
+      </div>
+
+      <div class="footer-content-container company-info">
+        <div class="company-intro">
+          <h3 class="site-title">TopLuxuryProperty</h3>
+          <p>
+            Top Luxury Property is one of the finest real estate companies in
+            Dubai where you can buy or sell the exclusive properties all over
+            UAE.
+          </p>
+        </div>
+        <div class="company-contact">
+          <div class="call-btn icon-btn">
+            <a href="https://tlp-webdesign.netlify.app/property-listing-page/">
+              <svg
+                width="20"
+                height="21"
+                viewBox="0 0 20 21"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <g id="vuesax/linear/call-calling">
+                  <g id="call-calling">
+                    <g id="call-calling_2">
+                      <path
+                        id="Vector"
+                        d="M17.3084 17.2372C17.3084 17.5372 17.2417 17.8456 17.1001 18.1456C16.9584 18.4456 16.7751 18.7289 16.5334 18.9956C16.1251 19.4456 15.6751 19.7706 15.1667 19.9789C14.6667 20.1872 14.1251 20.2956 13.5417 20.2956C12.6917 20.2956 11.7834 20.0956 10.8251 19.6872C9.86675 19.2789 8.90842 18.7289 7.95842 18.0372C7.00008 17.3372 6.09175 16.5622 5.22508 15.7039C4.36675 14.8372 3.59175 13.9289 2.90008 12.9789C2.21675 12.0289 1.66675 11.0789 1.26675 10.1372C0.866748 9.18724 0.666748 8.27891 0.666748 7.41224C0.666748 6.84557 0.766748 6.30391 0.966748 5.80391C1.16675 5.29557 1.48341 4.82891 1.92508 4.41224C2.45841 3.88724 3.04175 3.62891 3.65841 3.62891C3.89175 3.62891 4.12508 3.67891 4.33341 3.77891C4.55008 3.87891 4.74175 4.02891 4.89175 4.24557L6.82508 6.97057C6.97508 7.17891 7.08341 7.37057 7.15841 7.55391C7.23341 7.72891 7.27508 7.90391 7.27508 8.06224C7.27508 8.26224 7.21675 8.46224 7.10008 8.65391C6.99175 8.84557 6.83341 9.04557 6.63341 9.24557L6.00008 9.90391C5.90841 9.99557 5.86675 10.1039 5.86675 10.2372C5.86675 10.3039 5.87508 10.3622 5.89175 10.4289C5.91675 10.4956 5.94175 10.5456 5.95842 10.5956C6.10842 10.8706 6.36675 11.2289 6.73341 11.6622C7.10841 12.0956 7.50841 12.5372 7.94175 12.9789C8.39175 13.4206 8.82508 13.8289 9.26675 14.2039C9.70008 14.5706 10.0584 14.8206 10.3417 14.9706C10.3834 14.9872 10.4334 15.0122 10.4917 15.0372C10.5584 15.0622 10.6251 15.0706 10.7001 15.0706C10.8417 15.0706 10.9501 15.0206 11.0417 14.9289L11.6751 14.3039C11.8834 14.0956 12.0834 13.9372 12.2751 13.8372C12.4667 13.7206 12.6584 13.6622 12.8667 13.6622C13.0251 13.6622 13.1917 13.6956 13.3751 13.7706C13.5584 13.8456 13.7501 13.9539 13.9584 14.0956L16.7167 16.0539C16.9334 16.2039 17.0834 16.3789 17.1751 16.5872C17.2584 16.7956 17.3084 17.0039 17.3084 17.2372Z"
+                        stroke="#969696"
+                        stroke-width="1.2"
+                        stroke-miterlimit="10"
+                      ></path>
+                      <path
+                        id="Vector_2"
+                        d="M14.4167 9.46257C14.4167 8.96257 14.025 8.1959 13.4417 7.5709C12.9083 6.9959 12.2 6.5459 11.5 6.5459"
+                        stroke="#969696"
+                        stroke-width="1.2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      ></path>
+                      <path
+                        id="Vector_3"
+                        d="M17.3333 9.46224C17.3333 6.23724 14.725 3.62891 11.5 3.62891"
+                        stroke="#969696"
+                        stroke-width="1.2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      ></path>
+                    </g>
+                  </g>
+                </g>
+              </svg>
+              +971 58 941 2352
+            </a>
+          </div>
+          <div class="email-btn icon-btn">
+            <a href="https://tlp-webdesign.netlify.app/property-listing-page/">
+              <svg
+                width="20"
+                height="21"
+                viewBox="0 0 20 21"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <g id="vuesax/linear/sms">
+                  <g id="sms">
+                    <path
+                      id="Vector"
+                      d="M14.1667 18.0456H5.83341C3.33341 18.0456 1.66675 16.7956 1.66675 13.8789V8.04557C1.66675 5.12891 3.33341 3.87891 5.83341 3.87891H14.1667C16.6667 3.87891 18.3334 5.12891 18.3334 8.04557V13.8789C18.3334 16.7956 16.6667 18.0456 14.1667 18.0456Z"
+                      stroke="#969696"
+                      stroke-width="1.2"
+                      stroke-miterlimit="10"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    ></path>
+                    <path
+                      id="Vector_2"
+                      d="M14.1666 8.46191L11.5582 10.5452C10.6999 11.2286 9.29158 11.2286 8.43325 10.5452L5.83325 8.46191"
+                      stroke="#969696"
+                      stroke-width="1.2"
+                      stroke-miterlimit="10"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    ></path>
+                  </g>
+                </g>
+              </svg>
+              hello@topluxuryproperty.com
+            </a>
+          </div>
+          <div class="address-btn icon-btn">
+            <a href="https://tlp-webdesign.netlify.app/property-listing-page/">
+              <svg
+                width="20"
+                height="21"
+                viewBox="0 0 20 21"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <g id="vuesax/linear/location">
+                  <g id="location">
+                    <path
+                      id="Vector"
+                      d="M9.9999 12.1531C11.4358 12.1531 12.5999 10.9891 12.5999 9.55313C12.5999 8.11718 11.4358 6.95312 9.9999 6.95312C8.56396 6.95312 7.3999 8.11718 7.3999 9.55313C7.3999 10.9891 8.56396 12.1531 9.9999 12.1531Z"
+                      stroke="#969696"
+                      stroke-width="1.2"
+                    ></path>
+                    <path
+                      id="Vector_2"
+                      d="M3.01675 8.03724C4.65842 0.820575 15.3501 0.828908 16.9834 8.04557C17.9418 12.2789 15.3084 15.8622 13.0001 18.0789C11.3251 19.6956 8.67508 19.6956 6.99175 18.0789C4.69175 15.8622 2.05842 12.2706 3.01675 8.03724Z"
+                      stroke="#969696"
+                      stroke-width="1.2"
+                    ></path>
+                  </g>
+                </g>
+              </svg>
+              910, Clover Bay, Business Bay, Dubai
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-copyright">
+        <p>© 2023 TopLuxuryProperty.com | All Rights Reserved</p>
+        <div class="footer-menu">
+          <ul>
+            <li>Home</li>
+            <li>Contact Us</li>
+            <li>Privacy Policy</li>
+            <li>Terms and Conditions</li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+
+    <script src="./TopLuxuryProperty – Listing Page_files/main.js.download"></script>
+    <script src="./TopLuxuryProperty – Listing Page_files/listing.js"></script>
+  </body>
+</html>
